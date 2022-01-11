@@ -79,7 +79,7 @@ const geoCode = (address, callback) => {
         responseType: 'json'
     })
         .then((res) => {
-            console.log('res= ',res)
+           // console.log('res= ',res)
             if (res.data.features.length <= 0) {
                 callback('Unable to find location. Try another search.', undefined)
             } else {
