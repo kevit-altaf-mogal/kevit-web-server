@@ -24,6 +24,8 @@ console.log(publicDirectoryPath)
 console.log('git testing')
 const app = express()
 
+const port = process.env.PORT || 3000
+
 //Setup Static Path in Express
 
 // Define paths for Express config
@@ -178,6 +180,15 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}.`)
 })
+
+
+/*
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js -e js,hbs",
+    "start-server": "nodemon src/app.js -e js,hbs"
+  }
+*/
