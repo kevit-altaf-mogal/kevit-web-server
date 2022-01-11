@@ -21,7 +21,7 @@ const __dirname = new URL('.', import.meta.url).pathname;
 const publicDirectoryPath = path.join(__dirname,'../public/');
 console.log(publicDirectoryPath)
 */
-
+console.log('git testing')
 const app = express()
 
 //Setup Static Path in Express
